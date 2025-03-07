@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-"""a class square with instance."""
+"""Define a class Square."""
+
 
 class Square:
-
     """Represent a square."""
 
     def __init__(self, size):
