@@ -1,9 +1,14 @@
 #!/usr/bin/python3
-
 def safe_print_list(my_list=[], x=0):
-    for l in range(x):
-        try:
-            print(l)
+    i = 0
+    printnum = 0
 
-        except ValueError:
+    while i < x:
+        try:
+            print("{!s:}".format(my_list[i]), end="")
+            printnum += 1
+        except:
             pass
+        i += 1
+    print('')
+    return printnum
